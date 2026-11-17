@@ -1,0 +1,86 @@
+
+# ============================================================
+# ORIP - Open Research Intelligence Platform
+# Python version: 3.12
+#
+# This file contains the initial application dependencies.
+# AI/ML-specific dependencies will be introduced in later phases.
+# ============================================================
+
+
+# ------------------------------------------------------------
+# 1. BACKEND API DEVELOPMENT
+# ------------------------------------------------------------
+
+fastapi                 # Build REST APIs for ORIP
+uvicorn[standard]       # Run the FastAPI application
+pydantic                # Validate application data
+pydantic-settings       # Manage environment-based configuration
+python-multipart        # Handle document and file uploads
+
+
+# ------------------------------------------------------------
+# 2. DATABASE MANAGEMENT
+# ------------------------------------------------------------
+
+sqlalchemy              # Python ORM for database operations
+alembic                 # Database schema migrations
+
+
+# ------------------------------------------------------------
+# 3. DOCUMENT PROCESSING
+# ------------------------------------------------------------
+
+pymupdf                 # Extract text and metadata from PDF files
+python-docx             # Read Microsoft Word documents
+beautifulsoup4          # Extract content from HTML documents
+lxml                    # Parse HTML and XML efficiently
+
+
+# ------------------------------------------------------------
+# 4. ENVIRONMENT CONFIGURATION
+# ------------------------------------------------------------
+
+python-dotenv           # Load environment variables from .env files
+
+
+# ------------------------------------------------------------
+# 5. TESTING
+# ------------------------------------------------------------
+
+pytest                  # Automated application testing
+httpx                   # HTTP client and API testing
+
+
+# ------------------------------------------------------------
+# 6. CODE QUALITY
+# ------------------------------------------------------------
+
+ruff                    # Python linting and code formatting
+mypy                    # Static type checking
+
+
+# ============================================================
+# FUTURE DEPENDENCIES
+# These will be added when we reach their respective phases.
+# They are intentionally not installed yet.
+# ============================================================
+
+# numpy                 # Numerical computing
+# pandas                # Data analysis and manipulation
+# duckdb                # Analytical database
+
+# scikit-learn          # Classical machine learning
+# torch                 # Deep learning
+# transformers          # Pretrained language models
+# sentence-transformers # Text embeddings
+# faiss-cpu             # Vector similarity search
+
+# pytesseract           # Python interface for Tesseract OCR
+# networkx              # Knowledge graph algorithms
+
+# qdrant-client         # Vector database integration
+# rank-bm25             # Keyword retrieval
+# langchain             # LLM application framework
+# langgraph             # Agent workflow orchestration
+# ragas                 # RAG evaluation
